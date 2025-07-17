@@ -1,5 +1,5 @@
-# Santander 2025 Back-end
-Java RESTful API criada para a Santander 2025 Back-end
+# Santander 2025 Back-end com Java
+Java RESTful API criada para a Santander 2025 Back-end com Java
 
 ## Diagrama de Classes
 
