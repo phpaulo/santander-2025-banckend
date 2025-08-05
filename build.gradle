@@ -21,7 +21,16 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	// OpenAPI (Swagger) https://github.com/springdoc/springdoc-openapi
-	implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.1.0'
+	//implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.1.0'
+	/* *************** OpenAPI (Swagger) **************
+	   A versão acima utilizada no curso no vídeo: Expondo Endpoints REST e Testando API funcionou inicialmente, mas ao prosseguir com o
+	   curso a parou de funcionar. Dando um problema de compatibilidade com a versão do spring.
+	   No link abaixo referente à uma issue dentro do repositório oficial da OpenAPI relatando sobre este problema eu verifiquei que a
+	   versão 2.7.0 da OpenAPI poderia resolver este problema.
+	   https://github.com/springdoc/springdoc-openapi/issues/2485
+	*/
+	implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.7.0'
+
 
 	runtimeOnly 'com.h2database:h2'
 	runtimeOnly 'org.postgresql:postgresql'
